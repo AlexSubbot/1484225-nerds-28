@@ -19,35 +19,74 @@
     <main>
       <section>
         <h2>магазин готовых шаблонов</h2>
-        <h3>стоимость:</h3>
-        <span><!--Инпут ползунок--></span>
-        <h3>сетка:</h3>
-        <ul>
-          <li>адаптивная</li>
-          <li>фиксированная</li>
-          <li>резиновая</li>
-        </ul>
-        <h3>особенности:</h3>
-        <ul>
-          <li>слайдер</li>
-          <li>блок преимуществ</li>
-          <li>новости</li>
-          <li>галерея</li>
-          <li>корзина</li>
-        </ul>
-        <h3>сортировать</h3>
-        <ul>
-          <li>по цене</li>
-          <li>по типу</li>
-          <li>по названию</li>
-        </ul>
-      </section>
-      <section>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>стоимость:</legend>
+            <!--Инпут ползунок-->
+          </fieldset>
+          <fieldset>
+            <legend>сетка:</legend>
+            <ul>
+              <li>
+                <label>адаптивная
+                  <input type="radio" name="grid" value="adaptive">
+                </label>
+              </li><li>
+                <label>фиксированная
+                  <input type="radio" name="grid" value="fixed">
+                </label>
+              </li>
+              <li>
+                <label>резиновая
+                  <input type="radio" name="grid" value="rubber">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>особенности:</legend>
+            <ul>
+              <li>
+                <label>слайдер
+                  <input type="checkbox" name="slider" checked>
+                </label>
+              </li>
+              <li>
+                <label>блок преимуществ
+                  <input type="checkbox" name="features">
+                </label>
+              </li>
+              <li>
+                <label>новости
+                  <input type="checkbox" name="news" checked>
+                </label>
+              </li>
+              <li>
+                <label>галерея
+                  <input type="checkbox" name="gallery">
+                </label>
+              </li>
+              <li>
+                <label>корзина
+                  <input type="checkbox" name="cart">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">показать</button>
+          <fieldset>
+            <legend>сортировать</legend>
+            <button type="button">по цене</button>
+            <button type="button">по типу</button>
+            <button type="button">по названию</button>
+            <button type="button">сверхувниз</button>
+          </fieldset>
+        </form>
         <ul>
           <li>
             <img src="img/dec-browser.svg" width="360" height="40" alt="Декоративная рамка">
             <img src="img/cont-sedona.jpg" width="360" height="576" alt="Макет Седона">
-            <div class="">
+            <div>
               <h3>sedona</h3>
               <p>Информационный сайт для туристов</p>
               <button type="button" name="button">9 900 р</button>
@@ -56,31 +95,56 @@
           <li>
             <img src="img/dec-browser.svg" width="360" height="40" alt="Декоративная рамка">
             <img src="img/cont-pink.jpg" width="358" height="576" alt="Макет Пинк">
+            <div>
+              <h3>pink app</h3>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <button type="button" name="button">9 900 р</button>
+            </div>
           </li>
           <li>
             <img src="img/dec-browser.svg" width="360" height="40" alt="Декоративная рамка">
             <img src="img/cont-barbershop.jpg" width="364" height="582" alt="Макет Барбершоп">
+            <div>
+              <h3>barbershop</h3>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <button type="button" name="button">9 900 р</button>
+            </div>
           </li>
           <li>
             <img src="img/dec-browser.svg" width="360" height="40" alt="Декоративная рамка">
             <img src="img/cont-mishka.jpg" width="362" height="580" alt="Макет Мишка">
+            <div>
+              <h3>mishka</h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <button type="button" name="button">9 900 р</button>
+            </div>
           </li>
           <li>
             <img src="img/dec-browser.svg" width="360" height="40" alt="Декоративная рамка">
             <img src="img/cont-aplus.jpg" width="364" height="582" alt="Макет Аплюс">
+            <div>
+              <h3>a plus</h3>
+              <p>Лендинг курсов повышения квалификации</p>
+              <button type="button" name="button">9 900 р</button>
+            </div>
           </li>
           <li>
             <img src="img/dec-browser.svg" width="360" height="40" alt="Декоративная рамка">
             <img src="img/cont-kvast.jpg" width="362" height="580" alt="Макет Кваст">
+            <div>
+              <h3>кваст</h3>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <button type="button" name="button">9 900 р</button>
+            </div>
           </li>
         </ul>
       </section>
       <section>
         <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>следующая</li>
+          <li><a>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">следующая</a></li>
         </ul>
       </section>
       <section>
