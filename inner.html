@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="img/logo-nerds.svg" width="160" height="49" alt="Логотип Nerds"></a>
+      <a href="index.html"><img src="img/logo-nerds.svg" width="160" height="49" aria-label="Главная страница" alt="Логотип Nerds"></a>
       <ul>
         <li><a href="#">студия</a></li>
         <li><a href="#">клиенты</a></li>
@@ -74,13 +74,19 @@
             </ul>
           </section>
           <button type="submit">показать</button>
+        </form>
+        <form class="" action="index.html" method="post">
           <section>
             <h3>сортировать</h3>
-            <a href="#">по цене</a>
-            <a href="#">по типу</a>
-            <a href="#">по названию</a>
-            <a href="#">сверхувниз</a>
-            <a href="#">сверхувниз</a>
+            <ul>
+              <li><a aria-label="" href="#">по цене</a></li>
+              <li><a aria-label="" href="#">по типу</a></li>
+              <li><a aria-label="" href="#">по названию</a></li>
+            </ul>
+            <ul>
+              <li><a aria-label="Сортировка от меньшего к большему" href="#">&utrif;</a></li>
+              <li><a aria-label="Сортировка от большего к меньшему" href="#">&dtrif;</a></li>
+            </ul>
           </section>
         </form>
         <ul>
@@ -143,9 +149,9 @@
       <section>
         <ul>
           <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">следующая</a></li>
+          <li><a>2</a></li>
+          <li><a>3</a></li>
+          <li><a>следующая</a></li>
         </ul>
       </section>
       <section>
@@ -153,7 +159,7 @@
         <img src="img/map-marker.png" alt="метка" width="231" height="190">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-        <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        <a aria-label="Позвонить нам" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         <button type="button" name="button">напишите нам</button>
       </section>
     </main>
