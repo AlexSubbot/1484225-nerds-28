@@ -2,11 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Магазин | Дизайн-студия «Nerds»</title>
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="img/logo-nerds.svg" width="160" height="49" alt="Главная страница"></a>
+      <a href="index.html"><img src="img/logo-nerds.svg" width="160" height="49" alt="Логотип Nerds"></a>
       <ul>
         <li><a href="#">студия</a></li>
         <li><a href="#">клиенты</a></li>
@@ -20,12 +20,12 @@
       <section>
         <h2>магазин готовых шаблонов</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend>стоимость:</legend>
+          <section>
+            <h3>стоимость:</h3>
             <!--Инпут ползунок-->
-          </fieldset>
-          <fieldset>
-            <legend>сетка:</legend>
+          </section>
+          <section>
+            <h3>сетка:</h3>
             <ul>
               <li>
                 <label>адаптивная
@@ -38,13 +38,13 @@
               </li>
               <li>
                 <label>резиновая
-                  <input type="radio" name="grid" value="rubber">
+                  <input type="radio" name="grid" value="responsive">
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset>
-            <legend>особенности:</legend>
+          </section>
+          <section>
+            <h3>особенности:</h3>
             <ul>
               <li>
                 <label>слайдер
@@ -72,70 +72,71 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </section>
           <button type="submit">показать</button>
-          <fieldset>
-            <legend>сортировать</legend>
-            <button type="button">по цене</button>
-            <button type="button">по типу</button>
-            <button type="button">по названию</button>
-            <button type="button">сверхувниз</button>
-          </fieldset>
+          <section>
+            <h3>сортировать</h3>
+            <a href="#">по цене</a>
+            <a href="#">по типу</a>
+            <a href="#">по названию</a>
+            <a href="#">сверхувниз</a>
+            <a href="#">сверхувниз</a>
+          </section>
         </form>
         <ul>
           <li>
             <!--<img src="img/dec-browser.svg" width="360" height="40">-->
             <img src="img/cont-sedona.jpg" width="360" height="576" alt="Макет Седона">
-            <div>
+            <section>
               <h3>sedona</h3>
               <p>Информационный сайт для туристов</p>
               <button type="button" name="button">9 900 р</button>
-            </div>
+            </section>
           </li>
           <li>
             <!--<img src="img/dec-browser.svg" width="360" height="40">-->
             <img src="img/cont-pink.jpg" width="358" height="576" alt="Макет Пинк">
-            <div>
+            <section>
               <h3>pink app</h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
               <button type="button" name="button">9 900 р</button>
-            </div>
+            </section>
           </li>
           <li>
             <!--<img src="img/dec-browser.svg" width="360" height="40">-->
             <img src="img/cont-barbershop.jpg" width="364" height="582" alt="Макет Барбершоп">
-            <div>
+            <section>
               <h3>barbershop</h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
               <button type="button" name="button">9 900 р</button>
-            </div>
+            </section>
           </li>
           <li>
             <!--<img src="img/dec-browser.svg" width="360" height="40">-->
             <img src="img/cont-mishka.jpg" width="362" height="580" alt="Макет Мишка">
-            <div>
+            <section>
               <h3>mishka</h3>
               <p>Интернет-магазин вязаных игрушек</p>
               <button type="button" name="button">9 900 р</button>
-            </div>
+            </section>
           </li>
           <li>
             <!--<img src="img/dec-browser.svg" width="360" height="40">-->
             <img src="img/cont-aplus.jpg" width="364" height="582" alt="Макет Аплюс">
-            <div>
+            <section>
               <h3>a plus</h3>
               <p>Лендинг курсов повышения квалификации</p>
               <button type="button" name="button">9 900 р</button>
-            </div>
+            </section>
           </li>
           <li>
             <!--<img src="img/dec-browser.svg" width="360" height="40">-->
             <img src="img/cont-kvast.jpg" width="362" height="580" alt="Макет Кваст">
-            <div>
+            <section>
               <h3>кваст</h3>
               <p>Промо-сайт производителя крафтового кваса</p>
               <button type="button" name="button">9 900 р</button>
-            </div>
+            </section>
           </li>
         </ul>
       </section>
@@ -163,4 +164,26 @@
       <h2>Давайте дружить, это выгодно!</h2>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>Ваше имя:
+            <input type="text" placeholder="Имя Фамилия" name="name">
+          </label>
+        </p>
+        <p>
+          <label>Ваш email:
+            <input type="email" placeholder="email@example.com" name="email">
+          </label>
+        </p>
+        <p>
+          <label>Текст письма:
+            <input type="text" placeholder="В свободной форме" name="email_text">
+          </label>
+        </p>
+        <button type="submit">отправить</button>
+      </form>
+      <button aria-label="закрыть" type="button">&times;</button>
+    </section>
   </body>
