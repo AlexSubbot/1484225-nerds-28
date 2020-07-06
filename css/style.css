@@ -19,7 +19,6 @@
 }
 
 body {
-  min-width: 1177px;
   margin: 0;
   font-size: 16px;
   line-height: 24px;
@@ -53,47 +52,47 @@ a {
   border: none;
 }
 .white-button {
-  background: var(--white);
+  background-color: : var(--white);
 }
 .white-button:hover{
-    background: var(--red-basic);
+    background-color: var(--red-basic);
 }
 .white-button:active {
-      background: var(--red-dark);
+      background-color: var(--red-dark);
       box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 
 }
 .red-button {
-  background: var(--red-light);
+  background-color: var(--red-light);
 }
 .red-button:hover{
-    background: var(--red-basic);
+    background-color: var(--red-basic);
 }
 .red-button:active {
-      background: var(--red-dark);
+      background-color: var(--red-dark);
       box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 
 }
 
 .green-button {
-  background: var(--green-light)
+  background-color: var(--green-light)
 }
 .green-button:hover{
-    background: var(--green-basic);
+    background-color: var(--green-basic);
 }
 .green-button:active {
-      background: var(--green-dark);
+      background-color: var(--green-dark);
       box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
       opacity: 0.3;
 }
 .yellow-button {
-  background: var(--yellow-light)
+  background-color: var(--yellow-light)
 }
 .yellow-button:hover{
-    background: var(--yellow-basic);
+    background-color: var(--yellow-basic);
 }
 .yellow-button:active {
-      background: var(--yellow-dark);
+      background-color: var(--yellow-dark);
       box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
       opacity: 0.3;
 }
@@ -136,4 +135,42 @@ opacity: 0.3;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+}
+/* features */
+.features ul{
+  list-style: none;
+}
+.features h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+.features h3 {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.feature-item {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+.feature-item span{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+}
+/* brands */
+.brands ul{
+  list-style: none;
+}
+.brands a:hover{
+  background-color: : var(--black-basic);
+}
+.brands a:active{
+  background-color: : var(--black-basic);
+}
+/* contacts */
+.contacts {
+  background-image:
 }
