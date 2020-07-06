@@ -38,11 +38,68 @@ a {
   text-decoration: none;
   color: inherit;
 }
-ul {
-  list-style: none;
+
+/* buttons */
+
+.button {
+  font: inherit;
+  color: var(--white-whiter);
+  font-weight: 500;
+  line-height: 18px;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+.white-button {
+  background: var(--white);
+}
+.white-button:hover{
+    background: var(--red-basic);
+}
+.white-button:active {
+      background: var(--red-dark);
+      box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+
+}
+.red-button {
+  background: var(--red-light);
+}
+.red-button:hover{
+    background: var(--red-basic);
+}
+.red-button:active {
+      background: var(--red-dark);
+      box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+
 }
 
-/* Main navigation */
+.green-button {
+  background: var(--green-light)
+}
+.green-button:hover{
+    background: var(--green-basic);
+}
+.green-button:active {
+      background: var(--green-dark);
+      box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+      opacity: 0.3;
+}
+.yellow-button {
+  background: var(--yellow-light)
+}
+.yellow-button:hover{
+    background: var(--yellow-basic);
+}
+.yellow-button:active {
+      background: var(--yellow-dark);
+      box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+      opacity: 0.3;
+}
+
+/* header */
+
 .main-navigation {
   background-color: inherit;
   font-weight: 500;
@@ -58,4 +115,25 @@ ul {
 }
 nav a:active {
 opacity: 0.3;
+}
+
+/* main */
+/* slider */
+.slider ul{
+  list-style: none;
+}
+.slider h2 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/* catalog */
+.catalog ul{
+  list-style: none;
+}
+.catalog h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
