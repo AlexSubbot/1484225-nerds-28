@@ -22,6 +22,7 @@
 
   --gray-basic: #DFDFDF;
   --gray-dark: #D5D5D5;
+  --gray-border: #DBDBDB;
 }
 
 body {
@@ -44,6 +45,17 @@ a {
   color: inherit;
 }
 
+.pop-up {
+  display: none;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+}
 /* buttons */
 
 .button {
@@ -203,6 +215,9 @@ opacity: 0.3;
   text-transform: uppercase;
   color: var(--black-basic);
 }
+.contacts-card address {
+  font-style: normal;
+}
 /* footer */
 footer h2 {
   font-weight: bold;
@@ -272,4 +287,9 @@ footer h2 {
 
 .pagination ul {
   list-style: none;
+}
+.pagination .active {
+  border: 3px solid var(--gray-border);
+  box-sizing: border-box;
+  border-radius: 3px;
 }
