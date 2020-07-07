@@ -23,63 +23,67 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h2>магазин готовых шаблонов</h2>
+      <section class="shop">
+        <h2>Магазин готовых шаблонов</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <section>
+          <section class="price">
             <h3>стоимость:</h3>
             <!--Инпут ползунок-->
+            <span>от</span>
+            <span>0</span>
+            <span>до</span>
+            <span>15000</span>
           </section>
-          <section>
+          <section class="options">
             <h3>сетка:</h3>
             <ul>
               <li>
-                <label>адаптивная
-                  <input type="radio" name="grid" value="adaptive">
+                <label>Адаптивная
+                  <input class="filter" type="radio" name="grid" value="adaptive">
                 </label>
               </li><li>
-                <label>фиксированная
-                  <input type="radio" name="grid" value="fixed">
+                <label>Фиксированная
+                  <input class="filter" type="radio" name="grid" value="fixed">
                 </label>
               </li>
               <li>
-                <label>резиновая
-                  <input type="radio" name="grid" value="responsive">
+                <label>Резиновая
+                  <input class="filter" type="radio" name="grid" value="responsive">
                 </label>
               </li>
             </ul>
           </section>
-          <section>
-            <h3>особенности:</h3>
+          <section  class="options">
+            <h3>Особенности:</h3>
             <ul>
               <li>
-                <label>слайдер
-                  <input type="checkbox" name="slider" checked>
+                <label>Слайдер
+                  <input class="filter" type="checkbox" name="slider" checked>
                 </label>
               </li>
               <li>
-                <label>блок преимуществ
-                  <input type="checkbox" name="features">
+                <label>Блок преимуществ
+                  <input class="filter" type="checkbox" name="features">
                 </label>
               </li>
               <li>
-                <label>новости
-                  <input type="checkbox" name="news" checked>
+                <label>Новости
+                  <input class="filter" type="checkbox" name="news" checked>
                 </label>
               </li>
               <li>
-                <label>галерея
-                  <input type="checkbox" name="gallery">
+                <label>Галерея
+                  <input class="filter" type="checkbox" name="gallery">
                 </label>
               </li>
               <li>
-                <label>корзина
-                  <input type="checkbox" name="cart">
+                <label>Корзина
+                  <input class="filter" type="checkbox" name="cart">
                 </label>
               </li>
             </ul>
           </section>
-          <button type="submit">показать</button>
+          <button class="button white-button" type="submit">показать</button>
         </form>
         <form class="" action="index.html" method="post">
           <section>
@@ -160,13 +164,15 @@
           <li><a>следующая</a></li>
         </ul>
       </section>
-      <section>
+      <section class="contacts">
         <img src="img/map-map.png" alt="карта" width="1440" height="416">
         <img src="img/map-marker.png" alt="метка" width="231" height="190">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-        <a aria-label="Позвонить нам" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <button type="button" name="button">напишите нам</button>
+        <section class="contacts-card">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a aria-label="Позвонить нам" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <button class="button red-button" type="button" name="button">напишите нам</button>
+        </section>
       </section>
     </main>
     <footer>
@@ -176,7 +182,7 @@
       <h2>Давайте дружить, это выгодно!</h2>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
-    <section>
+    <section class="">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -199,3 +205,4 @@
       <button aria-label="закрыть" type="button">&times;</button>
     </section>
   </body>
+</html>

@@ -18,6 +18,9 @@
 
   --white: #EEEEEE;
   --white-whiter: #FFFFFF;
+
+  --gray-basic: #DFDFDF;
+  --gray-dark: #D5D5D5;
 }
 
 body {
@@ -55,12 +58,13 @@ a {
 }
 .white-button {
   background-color: : var(--white);
+  color: var(--black-basic);
 }
 .white-button:hover{
-    background-color: var(--red-basic);
+    background-color: var(--gray-basic);
 }
 .white-button:active {
-      background-color: var(--red-dark);
+      background-color: var(--gray-dark);
       box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 
 }
@@ -192,4 +196,43 @@ footer h2 {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+}
+
+
+/* inner */
+.shop ul {
+  list-style: none;
+}
+.shop h2 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+.shop h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.price span {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.options label {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+ .filter {
+  opacity: 0.4;
+ }
+
+ .filter:hover{
+   opacity: 1;
+ }
+.filter:disabled {
+  opacity: 0.1
+}
+.filter:disabled+{
+  opacity: 0.1
 }
