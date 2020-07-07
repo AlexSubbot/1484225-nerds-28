@@ -16,7 +16,7 @@
         <ul class="main-navigation">
           <li><a href="index.html">студия</a></li>
           <li><a href="#">клиенты</a></li>
-          <li><a href="inner.html">магазин</a></li>
+          <li><a class="active" href="inner.html">магазин</a></li>
           <li><a href="#">контакты</a></li>
           <li><a href="#">корзина</a></li>
         </ul>
@@ -83,19 +83,19 @@
               </li>
             </ul>
           </section>
-          <button class="button white-button" type="submit">показать</button>
+          <button class="button white-button" type="submit"><span>показать</span></button>
         </form>
         <form class="" action="index.html" method="post">
           <section>
             <h3>сортировать</h3>
             <ul>
-              <li><a aria-label="" href="#">по цене</a></li>
-              <li><a aria-label="" href="#">по типу</a></li>
-              <li><a aria-label="" href="#">по названию</a></li>
+              <li><a class="sorting active" href="#">по цене</a></li>
+              <li><a class="sorting" href="#">по типу</a></li>
+              <li><a class="sorting" href="#">по названию</a></li>
             </ul>
             <ul>
-              <li><a aria-label="Сортировка от меньшего к большему" href="#">&utrif;</a></li>
-              <li><a aria-label="Сортировка от большего к меньшему" href="#">&dtrif;</a></li>
+              <li><a class="up-dawn-dir active" aria-label="Сортировка от большего к меньшему" href="#">&dtrif;</a></li>
+              <li><a class="up-dawn-dir" aria-label="Сортировка от меньшего к большему" href="#">&utrif;</a></li>
             </ul>
           </section>
         </form>
@@ -156,12 +156,12 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="pagination">
         <ul>
-          <li><a>1</a></li>
-          <li><a>2</a></li>
-          <li><a>3</a></li>
-          <li><a>следующая</a></li>
+          <li><a class="button white-button active"><span>1</span></a></li>
+          <li><a class="button white-button"><span>2</span></a></li>
+          <li><a class="button white-button"><span>3</span></a></li>
+          <li><a class="button white-button"><span>следующая</span></a></li>
         </ul>
       </section>
       <section class="contacts">

@@ -1,6 +1,7 @@
 :root {
   --black-basic: #000000;
   --black-grafit: #283136;
+  --black-1: #231F20;
 
   --asphalt: #666666;
 
@@ -66,8 +67,11 @@ a {
 .white-button:active {
       background-color: var(--gray-dark);
       box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-
 }
+.white-button span:active {
+  opacity: 0.3;
+}
+
 .red-button {
   background-color: var(--red-light);
 }
@@ -77,9 +81,10 @@ a {
 .red-button:active {
       background-color: var(--red-dark);
       box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-
 }
-
+.red-button span:active {
+  opacity: 0.3;
+}
 .green-button {
   background-color: var(--green-light)
 }
@@ -89,8 +94,11 @@ a {
 .green-button:active {
       background-color: var(--green-dark);
       box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-      opacity: 0.3;
 }
+.green-button span:active {
+  opacity: 0.3;
+}
+
 .yellow-button {
   background-color: var(--yellow-light)
 }
@@ -100,7 +108,9 @@ a {
 .yellow-button:active {
       background-color: var(--yellow-dark);
       box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-      opacity: 0.3;
+}
+.yellow-button span:active {
+  opacity: 0.3;
 }
 
 /* header */
@@ -121,7 +131,9 @@ a {
 nav a:active {
 opacity: 0.3;
 }
-
+.main-navigation .active {
+  border-bottom: 2px solid var(--red-light);
+}
 /* main */
 /* slider */
 .slider ul{
@@ -233,6 +245,31 @@ footer h2 {
 .filter:disabled {
   opacity: 0.1
 }
-.filter:disabled+{
+.filter:disabled{
   opacity: 0.1
+}
+
+.sorting {
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+.sorting:active,
+.sorting.active {
+  opacity: 1;
+}
+
+
+.up-dawn-dir {
+  opacity: 0.2;
+}
+.up-dawn-dir:active,
+.up-dawn-dir.active {
+  color: var(--black-1);
+  opacity: 1;
+}
+
+.pagination ul {
+  list-style: none;
 }
