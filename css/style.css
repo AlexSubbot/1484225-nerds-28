@@ -266,7 +266,7 @@ opacity: 0.3;
 .marker {
   position: absolute;
   padding-left: 822px;
-  padding-top: 86px;
+  padding-bottom: 55px;
 }
 .contacts-card {
   color: var(--asphalt);
@@ -302,7 +302,7 @@ opacity: 0.3;
   margin-top: 37px;
   width: 219px;
   padding-top: 17px;
-  padding-right: : 44px;
+  padding-right: 44px;
   padding-bottom: 15px;
   padding-left: 44px;
 
