@@ -87,22 +87,21 @@ a {
     background-color: var(--gray-basic);
 }
 .white-button:active {
-      background-color: var(--gray-dark);
-      box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: var(--gray-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .white-button span:active {
   opacity: 0.3;
 }
-
 .red-button {
   background-color: var(--red-light);
 }
 .red-button:hover{
-    background-color: var(--red-basic);
+  background-color: var(--red-basic);
 }
 .red-button:active {
-      background-color: var(--red-dark);
-      box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: var(--red-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .red-button span:active {
   opacity: 0.3;
@@ -111,11 +110,11 @@ a {
   background-color: var(--green-light)
 }
 .green-button:hover{
-    background-color: var(--green-basic);
+  background-color: var(--green-basic);
 }
 .green-button:active {
-      background-color: var(--green-dark);
-      box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: var(--green-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .green-button span:active {
   opacity: 0.3;
@@ -125,11 +124,11 @@ a {
   background-color: var(--yellow-light)
 }
 .yellow-button:hover{
-    background-color: var(--yellow-basic);
+  background-color: var(--yellow-basic);
 }
 .yellow-button:active {
-      background-color: var(--yellow-dark);
-      box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: var(--yellow-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .yellow-button span:active {
   opacity: 0.3;
@@ -254,14 +253,33 @@ opacity: 0.3;
 /* contacts */
 .contacts {
   background-color: var(--white-whiter);
+  background-image: url(../img/map-map.png);
   width: 1440px;
+  height: 416px;
   margin: 0 auto;
-  padding: 0;
-
+  padding-top: 54px;
+  padding-bottom: 54px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+.marker {
+  position: absolute;
+  padding-left: 822px;
+  padding-top: 86px;
 }
 .contacts-card {
   color: var(--asphalt);
   line-height: 18px;
+  background-color: var(--white-whiter);
+  width: 319px;
+  padding-top: 49px;
+  padding-bottom: 47px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 
 }
 .contacts-card h3{
@@ -270,12 +288,23 @@ opacity: 0.3;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--black-basic);
+  margin: 0;
+  margin-bottom: 23px;
 }
 .contacts-card address {
-  font-style: normal
+  font-style: normal;
+  margin-bottom: 15px;
 }
 .map {
   width: 1440px;
+}
+.contacts-card .button {
+  margin-top: 37px;
+  width: 219px;
+  padding-top: 17px;
+  padding-right: : 44px;
+  padding-bottom: 15px;
+  padding-left: 44px;
 
 }
 /* footer */
