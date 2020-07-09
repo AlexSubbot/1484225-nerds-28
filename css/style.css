@@ -34,7 +34,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto;
-  background-color: var(--white);
+  background-color: var(--white-whiter);
 }
 img {
   max-width: 100%;
@@ -43,6 +43,16 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.page {
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .pop-up {
@@ -126,24 +136,35 @@ a {
 }
 
 /* header */
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 
 .main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.site-navigation {
   background-color: inherit;
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
   list-style: none;
 }
-.main-navigation a:hover {
+.site-navigation a:hover {
   color: var(--red-light);
 }
-.main-navigation a:active {
+.site-navigation a:active {
   opacity: 0.3;
 }
 nav a:active {
 opacity: 0.3;
 }
-.main-navigation .active {
+.site-navigation .active {
   border-bottom: 2px solid var(--red-light);
 }
 /* main */
@@ -158,8 +179,16 @@ opacity: 0.3;
 }
 
 /* catalog */
-.catalog ul{
+.catalog-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin: 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0;
   list-style: none;
+
 }
 .catalog h3 {
   font-size: 24px;
@@ -167,30 +196,44 @@ opacity: 0.3;
   text-transform: uppercase;
 }
 /* features */
-.features ul{
-  list-style: none;
+.features {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
-.features h2 {
+.features-item {
+  max-width: 651px;
+}
+.features-item ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.features-item h2 {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
-.features h3 {
+.features-item h3 {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
 }
-.feature-item {
+.percent {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
 }
-.feature-item span{
+.features-item span{
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
 }
 /* brands */
+.brands ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .brands ul{
   list-style: none;
 }
@@ -224,7 +267,20 @@ footer h2 {
   font-size: 36px;
   line-height: 36px;
 }
-
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.social-icons {
+  padding: 0;
+  margin: 0;
+  margin-right: 139px;
+}
+.friendship {
+  margin: 0;
+  padding: 0;
+}
 
 /* inner */
 .shop ul {
