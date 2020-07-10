@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header>
+    <header class="wrapper" >
       <div class="container">
         <nav class="main-navigation">
           <a aria-label="Главная страница" href="index.html">
@@ -27,9 +27,9 @@
       </div>
     </header>
     <main>
-      <section class="shop">
-        <h2>Магазин готовых шаблонов</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
+      <h2 class="header-shop wrapper">Магазин готовых шаблонов</h2>
+      <section class="shop container">
+        <form class="options-form" action="https://echo.htmlacademy.ru" method="get">
           <section class="price">
             <h3>стоимость:</h3>
             <!--Инпут ползунок-->
@@ -57,7 +57,7 @@
               </li>
             </ul>
           </section>
-          <section  class="options">
+          <section class="options">
             <h3>Особенности:</h3>
             <ul>
               <li>
@@ -89,104 +89,111 @@
           </section>
           <button class="button white-button" type="submit"><span>показать</span></button>
         </form>
-        <form class="" action="index.html" method="post">
+        <div class="wrap">
           <section>
-            <h3>сортировать</h3>
-            <ul>
+            <ul class="sorting-form">
+              <li><h3>сортировать</h3></li>
               <li><a class="sorting active" href="#">по цене</a></li>
               <li><a class="sorting" href="#">по типу</a></li>
               <li><a class="sorting" href="#">по названию</a></li>
-            </ul>
-            <ul>
               <li><a class="up-dawn-dir active" aria-label="Сортировка от большего к меньшему" href="#">&dtrif;</a></li>
               <li><a class="up-dawn-dir" aria-label="Сортировка от меньшего к большему" href="#">&utrif;</a></li>
             </ul>
           </section>
-        </form>
-        <ul>
-          <li>
-            <!--<img src="img/dec-browser.svg" width="360" height="40">-->
-            <img src="img/cont-sedona.jpg" width="360" height="576" alt="Макет Седона">
-            <section>
-              <h3>sedona</h3>
-              <p>Информационный сайт для туристов</p>
-              <button class="button red-button" type="button" name="button">9 900 р</button>
-            </section>
-          </li>
-          <li>
-            <!--<img src="img/dec-browser.svg" width="360" height="40">-->
-            <img src="img/cont-pink.jpg" width="358" height="576" alt="Макет Пинк">
-            <section>
-              <h3>pink app</h3>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <button class="button red-button" type="button" name="button">9 900 р</button>
-            </section>
-          </li>
-          <li>
-            <!--<img src="img/dec-browser.svg" width="360" height="40">-->
-            <img src="img/cont-barbershop.jpg" width="364" height="582" alt="Макет Барбершоп">
-            <section>
-              <h3>barbershop</h3>
-              <p>Сайт салона красоты. Для мужчин, да.</p>
-              <button class="button red-button" type="button" name="button">9 900 р</button>
-            </section>
-          </li>
-          <li>
-            <!--<img src="img/dec-browser.svg" width="360" height="40">-->
-            <img src="img/cont-mishka.jpg" width="362" height="580" alt="Макет Мишка">
-            <section>
-              <h3>mishka</h3>
-              <p>Интернет-магазин вязаных игрушек</p>
-              <button class="button red-button" type="button" name="button">9 900 р</button>
-            </section>
-          </li>
-          <li>
-            <!--<img src="img/dec-browser.svg" width="360" height="40">-->
-            <img src="img/cont-aplus.jpg" width="364" height="582" alt="Макет Аплюс">
-            <section>
-              <h3>a plus</h3>
-              <p>Лендинг курсов повышения квалификации</p>
-              <button class="button red-button" type="button" name="button">9 900 р</button>
-            </section>
-          </li>
-          <li>
-            <!--<img src="img/dec-browser.svg" width="360" height="40">-->
-            <img src="img/cont-kvast.jpg" width="362" height="580" alt="Макет Кваст">
-            <section>
-              <h3>кваст</h3>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <button class="button red-button" type="button" name="button">9 900 р</button>
-            </section>
-          </li>
-        </ul>
-      </section>
-      <section class="pagination">
-        <h2 class="visually-hidden">Пагинация</h2>
-        <ul>
-          <li><a class="button white-button active"><span>1</span></a></li>
-          <li><a class="button white-button"><span>2</span></a></li>
-          <li><a class="button white-button"><span>3</span></a></li>
-          <li><a class="button white-button"><span>следующая</span></a></li>
-        </ul>
+          <section class="shop-showcase">
+            <ul>
+              <li class="shop-item">
+                <!--<img src="img/dec-browser.svg" width="360" height="40">-->
+                <img src="img/cont-sedona.jpg" width="360" height="576" alt="Макет Седона">
+                <section class="shop-item-description">
+                  <h3>sedona</h3>
+                  <p>Информационный сайт для туристов</p>
+                  <button class="button red-button" type="button" name="button">9 900 р</button>
+                </section>
+              </li>
+              <li class="shop-item">
+                <!--<img src="img/dec-browser.svg" width="360" height="40">-->
+                <img src="img/cont-pink.jpg" width="358" height="576" alt="Макет Пинк">
+                <section class="shop-item-description">
+                  <h3>pink app</h3>
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <button class="button red-button" type="button" name="button">9 900 р</button>
+                </section>
+              </li>
+              <li class="shop-item">
+                <!--<img src="img/dec-browser.svg" width="360" height="40">-->
+                <img src="img/cont-barbershop.jpg" width="364" height="582" alt="Макет Барбершоп">
+                <section class="shop-item-description">
+                  <h3>barbershop</h3>
+                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                  <button class="button red-button" type="button" name="button">9 900 р</button>
+                </section>
+              </li>
+              <li class="shop-item">
+                <!--<img src="img/dec-browser.svg" width="360" height="40">-->
+                <img src="img/cont-mishka.jpg" width="362" height="580" alt="Макет Мишка">
+                <section class="shop-item-description">
+                  <h3>mishka</h3>
+                  <p>Интернет-магазин вязаных игрушек</p>
+                  <button class="button red-button" type="button" name="button">9 900 р</button>
+                </section>
+              </li>
+              <li class="shop-item">
+                <!--<img src="img/dec-browser.svg" width="360" height="40">-->
+                <img src="img/cont-aplus.jpg" width="364" height="582" alt="Макет Аплюс">
+                <section class="shop-item-description">
+                  <h3>a plus</h3>
+                  <p>Лендинг курсов повышения квалификации</p>
+                  <button class="button red-button" type="button" name="button">9 900 р</button>
+                </section>
+              </li>
+              <li class="shop-item">
+                <!--<img src="img/dec-browser.svg" width="360" height="40">-->
+                <img src="img/cont-kvast.jpg" width="362" height="580" alt="Макет Кваст">
+                <section class="shop-item-description">
+                  <h3>кваст</h3>
+                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <button class="button red-button" type="button" name="button">9 900 р</button>
+                </section>
+              </li>
+            </ul>
+          </section>
+          <section class="pagination">
+            <h2 class="visually-hidden">Пагинация</h2>
+            <ul>
+              <li><a class="button white-button active"><span>1</span></a></li>
+              <li><a class="button white-button"><span>2</span></a></li>
+              <li><a class="button white-button"><span>3</span></a></li>
+              <li><a class="button white-button"><span>следующая</span></a></li>
+            </ul>
+          </section>
+        </div>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <img src="img/map-map.png" alt="карта" width="1440" height="416">
-        <img src="img/map-marker.png" alt="метка" width="231" height="190">
-        <section class="contacts-card">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <a aria-label="Позвонить нам" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <button class="button red-button" type="button" name="button">напишите нам</button>
-        </section>
+        <!--<img class="map" src="img/map-map.png" alt="карта" width="1440" height="416">-->
+        <img class="marker" src="img/map-marker.png" alt="метка" width="231" height="190">
+        <div class="container">
+          <h2 class="visually-hidden">Контакты</h2>
+
+          <section class="contacts-card">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+            <a aria-label="Позвонить нам" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <button class="button red-button" type="button" name="button">напишите нам</button>
+          </section>
+        </div>
       </section>
     </main>
-    <footer>
-      <img src="img/icon-vk.svg" alt="Вконтакте" width="26" height="15">
-      <img src="img/icon-fb.svg" alt="Фейсбук" width="12" height="22">
-      <img src="img/icon-insta.svg" alt="Инстаграм" width="21" height="21">
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+    <footer class="main-footer container">
+      <section class="social-icons">
+        <img src="img/icon-vk.svg" alt="Вконтакте" width="26" height="15">
+        <img src="img/icon-fb.svg" alt="Фейсбук" width="12" height="22">
+        <img src="img/icon-insta.svg" alt="Инстаграм" width="21" height="21">
+      </section>
+      <section class="friendship">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
     </footer>
     <section class="pop-up">
       <h2>Напишите нам</h2>
