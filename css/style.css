@@ -289,6 +289,7 @@ opacity: 0.3;
 }
 .features-item {
   max-width: 651px;
+  margin-bottom: 75px;
 }
 .features-item p{
   margin: 0px;
@@ -305,6 +306,9 @@ opacity: 0.3;
   position: relative;
   margin-left: 32px;
   margin-bottom: 27px;
+}
+.features-item li:last-child{
+  margin-bottom: 0px;
 }
 .features-item li::before{
   content: "";
@@ -394,21 +398,54 @@ li.percent {
 /* brands */
 .brands ul{
   display: flex;
+  align-content: center;
   align-items: center;
-  justify-content: space-between;
   list-style: none;
   padding: 0;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 46px;
+  padding-bottom: 44px;
+  padding-left: 32px;
   margin: 0;
 }
+.brands li {
+display: flex;
+align-content: center;
+align-items: center;
+}
+.brand-link:nth-child(1) {
+  margin-right: 48px;
+}
+.brand-link:nth-child(2) {
+  margin-right: 44px;
+}
+.brand-link:nth-child(3) {
+  margin-right: 55px;
+}
 
-.brands a:hover{
-  background-color: : var(--black-basic);
+.brands .line {
+  width: 2px;
+  height: 52px;
+  background-color: var(--white);
 }
-.brands a:active{
-  background-color: : var(--black-basic);
+.brand-links a {
+  opacity: 0.2;
 }
+.brand-links a:hover {
+  opacity: 1;
+}
+.brand-links a:active {
+  opacity: 0.1;
+}
+.brand-links li:nth-child(1) {
+  margin-right: 45px;
+}
+.brand-links li:nth-child(2) {
+  margin-right: 58px;
+}
+.brand-links li:nth-child(3) {
+  margin-right: 63px;
+}
+
 /* contacts */
 .contacts {
   background-color: var(--white-whiter);
@@ -416,8 +453,8 @@ li.percent {
   width: 1440px;
   height: 416px;
   margin: 0 auto;
-  padding-top: 54px;
-  padding-bottom: 54px;
+  margin-top: 80px;
+  margin-bottom: 68px;
   display: flex;
   box-sizing: border-box;
   align-items: center;
