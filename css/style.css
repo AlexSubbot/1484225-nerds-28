@@ -64,6 +64,11 @@ a {
   height: 1px;
   margin: -1px;
 }
+.line {
+  height: 2px;
+  width: 1158px;
+  background-color: var(--white);
+}
 /* buttons */
 .button {
   font: inherit;
@@ -146,7 +151,14 @@ a {
 .main-navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
 }
+.main-navigation a {
+  height: 66px;
+}
+
 .site-navigation {
   display: flex;
   background-color: inherit;
@@ -154,6 +166,9 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   list-style: none;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
 .site-navigation li {
   margin-right: 44px;
@@ -176,39 +191,97 @@ opacity: 0.3;
 .site-navigation .active {
   border-bottom: 2px solid var(--red-light);
 }
+.cart-link::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -25px;
+
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.site-navigation .cart-link {
+  padding-left: 25px;
+  position: relative;
+}
+
 /* main */
 /* slider */
-.slider {
-  display: grid;
-  grid-template-columns:
+.slide {
+  display: flex;
+  flex-direction: row;
 }
-.slider ul{
+.slider .description {
+  width: 400px;
+}
+.slider ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.slider p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 55px;
 }
 .slider h2 {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  margin-top: 78px;
+  margin-bottom: 25px;
 }
-
+.slider .button {
+  padding-left: 54px;
+  padding-right: 54px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  border-radius: 3px;
+}
 /* catalog */
 .catalog-list{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-top: 80px;
   margin-bottom: 80px;
   padding: 0;
   list-style: none;
+}
 
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 100px
+}
+.catalog-list li:nth-child(3) {
+  margin-right: 60px;
+}
+.catalog-item p {
+  margin: 0px;
+  padding: 0px;
 }
 .catalog h3 {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 16px;
+  margin: 0px;
+}
+.catalog-item .button {
+  padding-left: 39px;
+  padding-top: 17px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  margin-top: 32px;
 }
 /* features */
 .features {
