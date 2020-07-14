@@ -285,36 +285,111 @@ opacity: 0.3;
 }
 /* features */
 .features {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display:flex;
 }
 .features-item {
   max-width: 651px;
 }
-.features-item ul{
+.features-item p{
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 40px;
+}
+.features-item ul,
+.features-table ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.features-item li{
+  position: relative;
+  margin-left: 32px;
+  margin-bottom: 27px;
+}
+.features-item li::before{
+  content: "";
+  position: absolute;
+  height:  2px;
+  width: 25px;
+  top: 11px;
+  left: -32px;
+  background-color: var(--red-light);
+
 }
 .features-item h2 {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 73px;
+  margin-bottom: 32px;
 }
-.features-item h3 {
+.features-item h3,
+.features-table h3
+ {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 23px;
 }
-.percent {
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 64px;
+.features-table {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 360px;
+  margin-left: 149px;
 }
-.features-item span{
+.features-table img {
+  width: 360px;
+  height: 208px;
+
+}
+.features-table h3 {
+  align-self: center;
+  margin-top: 37px;
+  margin-left: 15px;
+  margin-bottom: 31px;
+}
+.features-table ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+}
+.features-table li {
+  position: relative;
+  margin-right: 28px;
+  line-height: 18px;
+}
+
+.percent:nth-child(1) {
+  margin-right: 42px;
+}
+.percent:nth-child(2) {
+  margin-right: 40px;
+}
+.percent:nth-child(3) {
+  margin-right: 70px;
+}
+.features-table li:nth-child(5) {
+  margin-right: 24px;
+}
+.features-table li:last-child {
+  margin-right: 0px;
+}
+.features-table span{
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
+  position: absolute;
+}
+li.percent {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+  margin-bottom: 11px;
 }
 /* brands */
 .brands ul{
