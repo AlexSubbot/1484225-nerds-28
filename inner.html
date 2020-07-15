@@ -101,7 +101,6 @@
           <section class="shop-showcase">
             <ul>
               <li class="shop-item">
-                <!--<img src="img/dec-browser.svg" width="360" height="40">-->
                 <img src="img/cont-sedona.jpg" width="360" height="576" alt="Макет Седона">
                 <section class="shop-item-description">
                   <h3>sedona</h3>
@@ -167,12 +166,12 @@
           </section>
         </div>
       </section>
-      <section class="contacts">
-        <!--<img class="map" src="img/map-map.png" alt="карта" width="1440" height="416">-->
-        <img class="marker" src="img/map-marker.png" alt="метка" width="231" height="190">
+      <section class="contacts wrapper">
         <div class="container">
+          <div class="marker">
+            <img src="img/map-marker.png" alt="метка" width="231" height="190">
+          </div>
           <h2 class="visually-hidden">Контакты</h2>
-
           <section class="contacts-card">
             <h3>NЁRDS DESIGN STUDIO</h3>
             <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -184,9 +183,9 @@
     </main>
     <footer class="main-footer container">
       <section class="social-icons">
-        <img src="img/icon-vk.svg" alt="Вконтакте" width="26" height="15">
-        <img src="img/icon-fb.svg" alt="Фейсбук" width="12" height="22">
-        <img src="img/icon-insta.svg" alt="Инстаграм" width="21" height="21">
+        <a href="#"><img src="img/icon-vk.svg" alt="Вконтакте" width="26" height="15"></a>
+        <a href="#"><img src="img/icon-fb.svg" alt="Фейсбук" width="12" height="22"></a>
+        <a href="#"><img src="img/icon-insta.svg" alt="Инстаграм" width="21" height="21"></a>
       </section>
       <section class="friendship">
         <h2>Давайте дружить, это выгодно!</h2>
@@ -195,7 +194,7 @@
     </footer>
     <section class="pop-up">
       <h2>Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label>Ваше имя:
             <input type="text" placeholder="Имя Фамилия" name="name">
@@ -206,14 +205,14 @@
             <input type="email" placeholder="email@example.com" name="email">
           </label>
         </p>
-        <p>
+        <p class="email_text">
           <label>Текст письма:
             <input type="text" placeholder="В свободной форме" name="email_text">
           </label>
         </p>
-        <button type="submit">отправить</button>
+        <button class="button red-button" type="submit">отправить</button>
       </form>
-      <button aria-label="закрыть" type="button">&times;</button>
+      <button class="pop-up-close" aria-label="закрыть" type="button"></button>
     </section>
   </body>
 </html>

@@ -59,6 +59,7 @@ a {
   align-content: start;
 }
 .pop-up {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -139,13 +140,6 @@ a {
   margin-right: 0px;
   margin-bottom: 0px;
 }
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
 .pop-up-close {
   position: absolute;
   width: 21px;
@@ -173,6 +167,13 @@ a {
 
 .pop-up-close::after {
   transform: rotate(-45deg);
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .line {
   height: 2px;
@@ -623,8 +624,8 @@ align-items: center;
 }
 .marker {
   position: absolute;
-  left: 933px;
-  bottom: 134px;
+  left: 683px;
+  bottom: 78px;
 }
 .contacts-card {
   color: var(--satanic-grey);
@@ -885,6 +886,11 @@ align-items: center;
   min-height: 620px;
   margin-bottom: 30px;
   margin-right: 40px;
+}
+.shop-item::after {
+  content: "";
+  background-image: url(../img/dec-browser.svg);
+  opacity: 0,12;
 }
 .shop-item:nth-child(2n) {
   margin-right: 0;
