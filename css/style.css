@@ -530,6 +530,14 @@ align-items: center;
   width: 81px;
   border-radius: 50%;
 }
+.social-icons a:hover {
+  opacity: 1;
+}
+.social-icons a:active {
+  background-color: var(--red-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  opacity: 1;
+}
 .social-icons a:nth-child(1) {
   height: 15px;
   width: 26px;
