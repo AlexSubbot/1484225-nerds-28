@@ -273,7 +273,20 @@ opacity: 0.3;
   cursor: pointer;
   box-sizing: border-box;
 }
+slider-controls .current {
+  position: relative;
+}
+.slider-controls .current::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  border: 2px solid var(--gray-border-current);
 
+}
 /* catalog */
 .catalog-list{
   display: flex;
