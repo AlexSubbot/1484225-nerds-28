@@ -23,6 +23,7 @@
   --gray-basic: #DFDFDF;
   --gray-dark: #D5D5D5;
   --gray-border: #DBDBDB;
+  --gray-border-current: #C1C1C1;
 }
 
 body {
@@ -221,14 +222,12 @@ opacity: 0.3;
   padding: 0px;
   margin: 0px;
 }
-
-
-
 /* main */
 /* slider */
 .slide {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 .slider .description {
   width: 400px;
@@ -257,6 +256,24 @@ opacity: 0.3;
   padding-bottom: 15px;
   border-radius: 3px;
 }
+.slider-controls {
+  position: absolute;
+  bottom: 89px;
+  left: 535px;
+  z-index: 20;
+}
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 13px;
+  background-color: var(--white-whiter);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
 /* catalog */
 .catalog-list{
   display: flex;
