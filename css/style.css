@@ -885,12 +885,25 @@ align-items: center;
   width: 360px;
   min-height: 620px;
   margin-bottom: 30px;
+  margin-top: 40px;
   margin-right: 40px;
+  position:  relative;
 }
-.shop-item::after {
+.item-picture {
+  position:  relative;
+}
+.item-picture::after {
   content: "";
   background-image: url(../img/dec-browser.svg);
-  opacity: 0,12;
+  opacity: 0.12;
+  width: 360px;
+  height: 40px;
+  top: -40px;
+  left: 0px;
+  position: absolute;
+}
+.item-picture:hover::after {
+  opacity: 1;
 }
 .shop-item:nth-child(2n) {
   margin-right: 0;
@@ -903,6 +916,10 @@ align-items: center;
   justify-content: center;
   text-align: center;
   background-color: var(--white);
+  position: absolute;
+  width: 360px;
+  bottom: 44px;
+  left: 0px;
 }
 .shop-item-description h3 {
   margin-top: 26px;
