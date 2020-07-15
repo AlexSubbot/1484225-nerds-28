@@ -9,6 +9,7 @@
   --red-basic: #E74246;
   --red-light: #FB565A;
 
+
   --green-dark: #00AA62;
   --green-basic: #00BC6C;
   --green-light: #00CA74;
@@ -24,6 +25,7 @@
   --gray-dark: #D5D5D5;
   --gray-border: #DBDBDB;
   --gray-border-current: #C1C1C1;
+  --gray-soc: #E1E1E1;
 }
 
 body {
@@ -155,6 +157,7 @@ a {
   align-content: center;
   margin: 0px;
   padding: 0px;
+  margin-top: 50px
 }
 .logo-link {
   margin-right: 203px;
@@ -496,7 +499,8 @@ align-items: center;
 .contacts {
   background-color: var(--white-whiter);
   background-image: url(../img/map-map.png);
-  width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 416px;
   margin: 0 auto;
   margin-top: 80px;
@@ -504,11 +508,12 @@ align-items: center;
   display: flex;
   box-sizing: border-box;
   align-items: center;
+  position: relative;
 }
 .marker {
   position: absolute;
-  margin-left: 822px;
-  padding-bottom: 55px;
+  left: 933px;
+  bottom: 134px;
 }
 .contacts-card {
   color: var(--satanic-grey);
@@ -535,9 +540,6 @@ align-items: center;
 .contacts-card address {
   font-style: normal;
   margin-bottom: 15px;
-}
-.map {
-  width: 1440px;
 }
 .contacts-card .button {
   margin-top: 37px;
@@ -570,14 +572,13 @@ align-items: center;
 
 .social-icons a {
   margin-right: 9px;
-  background-color: var(--red-basic);
-  opacity: 0.2;
+  background-color: var(--gray-soc);
   height: 81px;
   width: 81px;
   border-radius: 50%;
 }
 .social-icons a:hover {
-  opacity: 1;
+  background-color: var(--red-basic);
 }
 .social-icons a:active {
   background-color: var(--red-dark);
