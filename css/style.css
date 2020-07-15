@@ -58,7 +58,80 @@ a {
   align-content: start;
 }
 .pop-up {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: var(--white-whiter);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  width: 960px;
+  height: 590px;
+  padding-left: 100px;
+  padding-right: 99px;
+  padding-top: 63px;
+  padding-bottom: 84px;
+  box-sizing: border-box;
+}
+.pop-up h2 {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 37px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+}
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 18px;
+
+}
+.feedback-form p {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 18px;
+  width: 360px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  margin-right: 40px;
+  margin-bottom: 34px;
+}
+.feedback-form p:nth-child(2) {
+  margin-right: 0px;
+}
+.feedback-form p:nth-child(3) {
+  margin-right: 0px;
+  width: 760px;
+}
+
+.pop-up label {
+
+  font-weight: bold;
+}
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+  border: 2px solid #D7DCDE;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  margin-top: 9px;
+  width: 360px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.feedback-form input[type="email"] {
+
+}
+.email_text input[type="text"]{
+  line-height: 18px;
+  width: 760px;
+  height: 118px;
+  box-sizing: border-box;
+  margin-right: 0px;
+  margin-bottom: 0px;
 }
 .visually-hidden {
   position: absolute;
