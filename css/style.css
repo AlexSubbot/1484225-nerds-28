@@ -82,11 +82,17 @@ a {
   font-size: 45px;
   line-height: 53px;
 }
+
 .feedback-form {
   display: flex;
   flex-wrap: wrap;
   line-height: 18px;
-
+}
+.feedback-form .button {
+  padding-top: 17px;
+  padding-right: 83px;
+  padding-bottom: 15px;
+  padding-left: 83px;
 }
 .feedback-form p {
   display: flex;
@@ -108,7 +114,6 @@ a {
 }
 
 .pop-up label {
-
   font-weight: bold;
 }
 .feedback-form input[type="text"],
@@ -139,6 +144,32 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+.pop-up-close {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 23px;
+  right: 10px;
+  border: 0;
+  cursor: pointer;
+}
+.pop-up-close::before,
+.pop-up-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: var(--basic-dark);
+}
+.pop-up-close::before {
+  transform: rotate(45deg);
+}
+
+.pop-up-close::after {
+  transform: rotate(-45deg);
 }
 .line {
   height: 2px;
